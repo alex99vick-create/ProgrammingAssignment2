@@ -44,8 +44,8 @@ cacheSolve <- function(x, ...) {
   }
   
   mat <- x$get()
-  inv <- solve(mat, ...)   # compute the inverse
-  x$setinverse(inv)        # cache it
+  inv <- solve(mat, ...)   
+  x$setinverse(inv)        
   inv
   
 }
